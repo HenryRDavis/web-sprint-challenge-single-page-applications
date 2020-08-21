@@ -19,7 +19,7 @@ describe('Add text, selecting toppings, submit form', () => {
           .select('medium')
       })
 
-    it('select multiple toppings', () => {
+    it('select toppings', () => {
         cy.get('[type="checkbox"]').check()
      })
 
