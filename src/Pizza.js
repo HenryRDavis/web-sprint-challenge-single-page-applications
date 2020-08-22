@@ -19,10 +19,8 @@ const Pizza = ({values, inputChange, checkboxChange, submit}) => {
     
       return(
         <form>
-          <label htmlFor="name">
-            Name
+          <label>Name
             <input
-              id="name"
               type="text"
               name="name"
               value={values.name}
@@ -30,7 +28,7 @@ const Pizza = ({values, inputChange, checkboxChange, submit}) => {
             />
           </label>
         
-          <label htmlFor="size">
+          <label>
             What size would you like your pizza to be?
             <select onChange={onInputChange} value={values.size} name='size'>
               <option value=''>--Please choose a size--</option>
@@ -41,7 +39,7 @@ const Pizza = ({values, inputChange, checkboxChange, submit}) => {
           </label>
 
     <h4>Toppings</h4>
-    
+
         <label>Pepperoni
         <input
         type="checkbox"
@@ -69,3 +67,5 @@ const Pizza = ({values, inputChange, checkboxChange, submit}) => {
 }
 
 export default Pizza;
+
+

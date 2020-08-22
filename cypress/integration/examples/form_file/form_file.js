@@ -1,11 +1,11 @@
 describe('Add text, selecting toppings, submit form', () => {
-    it('navigate to http://localhost:3000 ', () => {
+    it('navigate to http://localhost:3000', () => {
       cy.visit('http://localhost:3000 ')
       cy.url().should('include', 'localhost')
     })
 
     it('navigate to pizza page', () => {
-        cy.get('').click()
+        cy.get('#roundPie').click()
     })
 
     it('add text to box', () => {
